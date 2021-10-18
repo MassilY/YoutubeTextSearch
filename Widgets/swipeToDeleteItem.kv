@@ -1,0 +1,21 @@
+<SwipeToDeleteItem>:
+  size_hint_y: None
+  height: content.height
+
+  MDCard:
+    size_hint_x: None
+    width: trash_button.width
+    focus_behavior: True
+    _no_ripple_effect: False
+    MDFlatButton:
+      id: trash_button
+      text: "trash-can"
+      width: "50dp"
+      pos_hint: { "center_y": .5 }
+      on_release: app.remove_item(root)
+
+  MDCard:
+    OneLineListItem:
+      id: content
+      text: root.text
+      _no_ripple_effect: False

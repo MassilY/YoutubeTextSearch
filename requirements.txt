@@ -1,0 +1,6 @@
+pydub
+yt-dlp
+SpeechRecognition
+thefuzz
+python-Levenshtein
+Kivy
